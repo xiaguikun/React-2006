@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Function.prototype.bind()
+        // 语法: fn.bind(thisObj[,arg1...,argN]);
+        // 参数: thisObj 对象 指的是函数fn中的this需要指向的对象
+        //       arg any 函数中需要绑定的参数
+        // 返回值: 一个新函数
+        // 作用:  1. 修改函数中this关键字的指向
+        //        2. 为函数绑定实际参数
+
+        // var a = 20;
+        // var obj = {
+        //     a: 10,
+        //     fn: function() {
+        //         // this关键字 出现在函数中
+        //         // 谁调用 指向谁
+        //         console.log(this.a);
+        //     }
+        // }
+
+        // var obj2 = {
+        //     a: 5
+        // }
+
+        // obj.fn();
+        // var fn = obj.fn; // window.fn
+        // console.log(fn === obj.fn);
+        // fn();
+
+        // 修改函数中的this指向
+        // var fn = obj.fn.bind(obj2);
+        // // console.log(fn === obj.fn);
+        // fn();
+
+        // var o = {
+        //     x: 5,
+        //     fn: function(a, b, c) {
+        //         console.log(this.x + a + b + c);
+        //     }
+        // }
+
+        // var x = 3;
+        // var fn = o.fn.bind(o, 5);
+        // fn(2, 3, 4);
+
+        // 面试题：
+        // 在console.log函数调用时 在所有内容前加上 '你好'
+        // console.log = console.log.bind(console, '你好');
+        // console.log('zhangsan');
+
+
+
+
+
+        window.onload = function() {
+            var btn = document.querySelector('#btn');
+
+
+            btn.onclick = function() {
+                // console.log(this);
+                // var that = this;
+                setTimeout(function() {
+
+                    console.log(this);
+
+                }.bind(this), 2000);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn">按钮</button>
+</body>
+
+</html>

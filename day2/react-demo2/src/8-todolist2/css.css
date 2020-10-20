@@ -1,0 +1,17 @@
+.inp{
+    width: 70%;
+    height: 30px;
+    margin: 30px auto;
+    display:block;
+}
+.ul{
+    width:70%;
+    margin:0 auto;
+}
+.li{
+    width:90%;
+    height:30px;
+}
+.btn{
+    float:right;
+}

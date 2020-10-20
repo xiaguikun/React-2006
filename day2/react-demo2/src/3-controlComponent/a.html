@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function a(name){
+        //     return function fn(value) {
+        //         return name+'-'+value+'岁'
+        //     }
+        // }
+        // let Pig = a('pig');
+        // console.log(Pig(11))
+        // console.log(Pig(12))
+        // let Cat = a('Cat');
+        // console.log(Cat(11))
+        // console.log(Cat(12))
+        // console.log(Object.prototype.toString.call('111').slice(8,-1))
+        function a(type) {
+            return function fn(value) {
+                return type === Object.prototype.toString.call(value).slice(8,-1)
+            }
+        }
+       
+        let isArray = a('Array');
+        console.log(isArray([1,2,3]))
+        let isString = a('String');
+        console.log(isString('acn'))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
