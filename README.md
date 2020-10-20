@@ -12,3 +12,9 @@
     首先先执行父组件的render的函数然后是子组件的render，子组件的componentDidMount,然后是父组件的componentDidMount
 ### 5.关于setState的同步异步
     一般情况下是异步的，但是在js原生事件(而不是react的封装事件)是同步的，例如在setTimeOut(()=>{},2000)中this.setState(),以及document.querySelector().addEventListner('click',()=>{})中设置this.setState()是同步的
+
+
+
+
+
+### Websocket
