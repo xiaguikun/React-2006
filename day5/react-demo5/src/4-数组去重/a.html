@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.利用es6 set去重
+        // function newArr(arr){
+        //     return Array.from(new Set(arr))
+        // }        
+        // var arr = [1,1,2,9,6,9,6,3,1,4,5];        
+        // console.log(newArr(arr))
+        // console.log([...(new Set(arr))]);
+
+
+        //2.forEach结合indexOf去重
+        // var arr = [1,1,2,5,6,3,5,5,6,8,9,8];
+        // let arr1=[];
+        // arr.forEach((item)=>{
+        //     if(arr1.indexOf(item)==-1){
+        //         arr1.push(item)
+        //     }
+        // })
+        // console.log(arr1);
+        
+
+
+        //3.双层for循环去重        
+        // function newArr(arr){
+        //     for(var i=0;i<arr.length;i++){
+        //         for(var j=i+1;j<arr.length;j++){
+        //             if(arr[i]==arr[j]){ 
+        //             arr.splice(j,1);
+        //             j--;
+        //             }
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // var arr = [1,1,2,5,6,3,5,5,6,8,9,8];
+        // console.log(newArr(arr))
+    </script>
+</body>
+</html>
