@@ -22,9 +22,9 @@ class Redirect1 extends Component {
                     <li><Link to='/home2'>bbbbb</Link></li>
                 </ul>
                 <Switch>
+                    <Redirect from='/' exact to='/home1'></Redirect>
                     <Route path='/home1' render={Home1}></Route>
                     <Route path='/home2' component={Home2}></Route>
-                    <Redirect from='/' to='/home1'></Redirect>
                 </Switch>
             </>
         );
