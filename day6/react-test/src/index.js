@@ -8,7 +8,13 @@ import {BrowserRouter} from 'react-router-dom';
 // import App from './1-react路由/5-重定向.jsx';
 // import App from './1-react路由/6-登录.jsx';
 // import App from './1-react路由/7-高亮.jsx';
-import App from './1-react路由/8-改变标签.jsx';
+// import App from './1-react路由/8-改变标签.jsx';
+// import App from './2-day7/1-参数获取.jsx';
+// import App from './2-day7/2-404页面.jsx';
+// import App from './2-day7/3-后台管理侧边栏sideBar.jsx';
+// import App from './2-day7/4-路由表实现嵌套路由.jsx';
+// import App from './2-day7/5-朋友的朋友.jsx';
+import App from './2-day7/6-模态框.jsx';
 
 ReactDOM.render(
   <BrowserRouter>

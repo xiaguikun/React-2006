@@ -1,0 +1,11 @@
+.box{
+    width:100%;
+    display:flex;
+}
+.aside{
+    width: 200px;
+    background:#ccc;
+}
+.main{
+    flex-basis:1;
+}
