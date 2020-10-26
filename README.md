@@ -14,6 +14,16 @@
     一般情况下是异步的，但是在js原生事件(而不是react的封装事件)是同步的，例如在setTimeOut(()=>{},2000)中this.setState(),以及document.querySelector().addEventListner('click',()=>{})中设置this.setState()是同步的
 ### 6.异步编程解决方案
     promise(es6) 回调函数  async await(es8)
+### 7.es6新增的对象的方法
+    Object.keys(obj)   会得到返回值是一个数组，数组的内容为obj的key值
+    Object.values(obj)  会得到返回值是一个数组，数组的参数obj的value值
+    Object.entries(obj) 会得到返回值是一个二维数组，数组的参数是每个二维的数组是obj的key和values的值
+    ```js
+        const obj = { foo: 'bar', baz: 42 };
+        Object.entries(obj)
+        // [ ["foo", "bar"], ["baz", 42] ]
+    ```
+    Object.is(变量1,变量2),比较变量1与变量2是否相等。
 
 
 
