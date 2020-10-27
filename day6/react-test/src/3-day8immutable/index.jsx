@@ -32,7 +32,7 @@ class index extends Component {
         const map22=Map(obj);
         console.log(map21===map22);//false
         console.log(map21.equals(map22));//true
-        console.log(Object.is(map21,map22));
+        console.log(Object.is(map21,map22));//false
 
 
         //map对象中 .map方法接收回调函数作为参数，回调函数中，有v和k两个参数，v是值，key是键，在map方法中的返回值会返回到对象中的value中，然后通过 .join()方法回将所有的value值链接成字符串
@@ -100,7 +100,7 @@ class index extends Component {
         console.log(list51.toJS());
 
 
-        //formJs完全将一个js对象或者数组转化成不可变的map对象或者list数组
+        //fromJs完全将一个js对象或者数组转化成不可变的map对象或者list数组
         const obj6={a:1,b:2,c:3};
         console.log(Object.keys(obj6));
         console.log(obj6['a'],obj6[1]);
@@ -148,7 +148,7 @@ class index extends Component {
         })
         console.log(JSON.stringify(map83));
 
-
+        //Set结构
         const set11=Set(['a','b','b','b','c']);
         console.log(set11.toJS());
         const map91 = Map({ a: 1, b: 2, c: 3 });

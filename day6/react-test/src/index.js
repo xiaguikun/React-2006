@@ -22,7 +22,22 @@ import {BrowserRouter} from 'react-router-dom';
 
 
 
-import App from './3-day8immutable/index.jsx';
+// import App from './3-day8immutable/index.jsx';
+
+
+
+
+// import App from './4-day9Lazy 和 Suspense和Hooks/1-lazy和Suspense/App.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/1-UseState.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/2-UseEffect.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/3-UseContext.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/4-UseReducer.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/5-UseCallback.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/6-UseMemo.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/7-Memoization.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/8-UseRef.jsx';
+// import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/9-UseImperativeHandle.jsx';
+import App from './4-day9Lazy 和 Suspense和Hooks/2-Hooks/10-UseLayoutEffect.jsx';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -30,3 +45,7 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById('root')
 );
+
+// setTimeout(()=>{
+//   ReactDOM.unmountComponentAtNode(document.getElementById('root'))
+// },10000)
