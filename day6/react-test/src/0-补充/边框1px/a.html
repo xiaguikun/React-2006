@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            background:skyblue;
+            margin:50px auto;
+            position: relative;
+        }
+        div::after{
+            content:'';
+            display: block;
+            position:relative;
+            width:200%;
+            height:200%;
+            transform:scale(0.5);
+            border:1px solid black;
+            transform-origin:0 0 ;
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
